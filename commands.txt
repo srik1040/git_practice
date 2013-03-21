@@ -96,6 +96,8 @@ git remote -v (Lists the remote names and its repos pointing to)
 
 ######### Fetch ##########
 
+git fetch
+
 git fetch remote_name (It fetches all branches from remote_name where it is
 pointing to)
 
@@ -114,6 +116,9 @@ git merge branch_name (It will merge branch_name with current branch)
 
 ############ PULL ############
 
+git pull  (It pull all remotes)
+
+git pull remote_name  (It pull specified remote)
 
 ########## END #############
 
