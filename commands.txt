@@ -55,7 +55,9 @@ branch from current branch. It take always from current branch)
 git branch new_branch_name existing_branch (It creates a new_branch from
 existing branch)
 git checkout new_branch_name
+####
 
+git branch -t new_branch_name existing_branch (It will create new branch from existing branch and it will track)
 
 git branch -D branch_name (It deletes forcibly the specified branch, even if
 you were in that specified branch)
