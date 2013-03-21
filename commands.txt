@@ -1,3 +1,17 @@
+########## Creating New Git RepoT ##########
+
+mkdir dir_name
+cd dir_name
+git init
+######## END ###########
+
+########### CLONE ##########
+
+git clone [-o remote_name] git_repo_url [-b branch_name ] ([] indicates
+optional)
+
+########## END #######
+
 touch filename
 git add filename
 
@@ -14,7 +28,7 @@ git status
 nothing added to commit but untracked files present (use "git add" to track)
 ################# END ###################
 
-git add filename
+git add filename (It moves files to staging)
 git status
 ############## After ADD ##############
 
@@ -29,4 +43,75 @@ git status
 #
 ################# END ###################
 
+git commit -a -m "msg" (where this command commits and staging for the modified files)
+
+
+######### Branch Commands ##########33
+
+git checkout -b new_branch_name (It creates a new branch and switch to new
+branch from current branch. It take always from current branch)
+
+## Performs above action in two commands asper below ##
+git branch new_branch_name existing_branch (It creates a new_branch from
+existing branch)
+git checkout new_branch_name
+
+
+git branch -D branch_name (It deletes forcibly the specified branch, even if
+you were in that specified branch)
+
+git branch -d branch_name (It deletes the specified branch, but not the branch
+you were currently in)
+
+git branch 
+
+git branch -a
+
+############# BRACH COMMADNS END ##############3
+
+######## Stash ###########
+
+git stash (It commit the modified files in a temporary place (other than
+branches))
+
+git stash save -m "msg" (save as above with message)
+
+git stash pop (It pop's the files from stash and it deletes the committed
+files from stash)
+
+####### Stash END ######
+
+###### Remote Commands #########
+
+git remote add remote_name git_repo_url 
+(ex: git remote add zeomega git@github.com:zeomega/JivaProducts.git
+     git remote add msrikanth git@github.com:srik1040/ExampleRepo.git )
+(Note: The above cmd adds the remote for git repos)
+
+git remote -v (Lists the remote names and its repos pointing to)
+
+########### END #############
+
+######### Fetch ##########
+
+git fetch remote_name (It fetches all branches from remote_name where it is
+pointing to)
+
+########### END ###########
+
+############# MERGE ##########
+
+git merge remote_name/branch_name (It will merge remote branch with current
+branch)
+
+---------------
+
+git merge branch_name (It will merge branch_name with current branch)
+
+######### END ##########
+
+############ PULL ############
+
+
+########## END #############
 
