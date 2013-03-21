@@ -156,3 +156,10 @@ git reset --hard commit_hash (It removes entire data/history after the commit
 hash)
 
 ######## END ##############
+
+####### REBASE ########
+
+git rebase -i commit_hash (to merge commits or modifiy the commits or amend
+the commits)
+
+######### END #########
