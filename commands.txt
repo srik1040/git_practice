@@ -13,3 +13,20 @@ git status
 #       commands.txt
 nothing added to commit but untracked files present (use "git add" to track)
 ################# END ###################
+
+git add filename
+git status
+############## After ADD ##############
+
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#       new file:   commands.txt
+#
+################# END ###################
+
+
