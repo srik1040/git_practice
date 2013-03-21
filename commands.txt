@@ -122,3 +122,27 @@ git pull remote_name  (It pull specified remote)
 
 ########## END #############
 
+
+########## PUSH ###########
+
+git push remote_name branch_name:remote_branch_name
+(It pushes branch_name to remote_branch_name in repo where remote_name pointing to)
+(Ex: 
+    git push zeomega develop:develop
+    git push msrikanth develop:develop
+)
+
+git push remote_name branch_name
+(same as above)
+(Ex:
+    git push zeomega develop
+    git push msrikanth develop
+)
+
+git push remote_name :remote_branch_name
+(Deleting remote branch in repo where remote_name pointing to)
+(Ex:
+    git push msrikanth :develop
+)
+
+######## END ##########
