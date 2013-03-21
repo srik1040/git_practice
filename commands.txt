@@ -106,7 +106,7 @@ pointing to)
 ############# MERGE ##########
 
 git merge remote_name/branch_name (It will merge remote branch with current
-branch)
+branch. It needs fetch before merge)
 
 ---------------
 
@@ -146,3 +146,20 @@ git push remote_name :remote_branch_name
 )
 
 ######## END ##########
+
+####### RESET #############
+
+git reset --soft commit_hash (It will deleted history/log but will keeps the
+changes as modified files)
+
+git reset --hard commit_hash (It removes entire data/history after the commit
+hash)
+
+######## END ##############
+
+####### REBASE ########
+
+git rebase -i commit_hash (to merge commits or modifiy the commits or amend
+the commits)
+
+######### END #########
