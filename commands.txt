@@ -163,3 +163,15 @@ git rebase -i commit_hash (to merge commits or modifiy the commits or amend
 the commits)
 
 ######### END #########
+
+############# REVERT ##############
+
+git revert commit_hash
+
+(To Undo revert - verify "git reflog", copy the hash required to perform
+revert back action. 
+
+git reflog
+git reset --hard HEAD@{1}
+
+############ END ############
